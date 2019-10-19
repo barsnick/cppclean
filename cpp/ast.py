@@ -1315,6 +1315,12 @@ class ASTBuilder(object):
     def handle_extern(self):
         pass
 
+    def handle_true(self):
+        pass
+
+    def handle_false(self):
+        pass
+
     def handle_virtual(self):
         # What follows must be a method.
         token = self._get_next_token()
