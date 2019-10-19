@@ -457,7 +457,7 @@ class TypeConverter(object):
             elif token.name == '<':
                 templated_tokens, i = self._get_template_end(tokens, i + 1)
                 continue
-            elif token.name == ',' or token.name == '(':
+            elif token.name == ',' or token.name == '(' or token.name == '=':
                 add_type()
                 reference = pointer = array = False
                 empty_array = True
